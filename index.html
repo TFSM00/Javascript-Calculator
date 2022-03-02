@@ -1,65 +1,59 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Calculator</title>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="calculator.png" type="image/x-icon">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+        <div class="calculator-screen">0</div>
 
-</head>
-<body>
-    <p id="title">Calculator</p>
-
-    <div class="calculator-body">
-        <div class="output">
-            <div id="eq">eq</div>
-            <div id="input">input</div>
-        </div>
-
-        <div class="buttons">
+        <div class="calculator-keys">
             <div class="row r1">
-                <button class="button clear">Clear</button>
-                <button class="button delete">Delete</button>
-            </div>
-            <div class="row r2">
-                <button class="button b7" data-number>7</button>
-                <button class="button b8" data-number>8</button>
-                <button class="button b9" data-number>9</button>
-                <button class="button b/" data-operator>/</button>
-            </div>
+                <button value="7">7</button>
+                <button value="8">8</button>
+                <button value="9">9</button>
+                <button class="operator" value="/">&divide;</button>
+            </div>   
+            <div class="row r2"> 
+                <button value="4">4</button>
+                <button value="5">5</button>
+                <button value="6">6</button>
+                <button class="operator" value="*">&times;</button>
+            </div> 
+            
             <div class="row r3">
-                <button class="button b4" data-number>4</button>
-                <button class="button b5" data-number>5</button>
-                <button class="button b6" data-number>6</button>
-                <button class="button b*" data-operator="*">x</button>
-            </div>
+                <button value="1">1</button>
+                <button value="2">2</button>
+                <button value="3">3</button>
+                <button class="operator" value="-">-</button>
+            </div> 
+            
             <div class="row r4">
-                <button class="button b1" data-number>1</button>
-                <button class="button b2" data-number>2</button>
-                <button class="button b3" data-number>3</button>
-                <button class="button b-" data-operator>-</button>
-            </div>
+                <button value="0">0</button>
+                <button class="decimal" value=".">.</button>
+                <button class="all-clear" value="all-clear">AC</button>
+                <button class="operator" value="+">+</button>
+            </div> 
+
             <div class="row r5">
-                <button class="button b." >.</button>
-                <button class="button b0" data-number>0</button>
-                <button class="button b=" >=</button>
-                <button class="button b+" >+</button>
-            </div>
+                <button   class="equal-sign operator" value="=">=</button>
+            </div> 
         </div>
-
     </div>
-
-
+    
     <div class="footer">
         <p id="dev">Developed and Designed by Tiago Moreira</p>
         <a href="https://github.com/TFSM00">
             <img src="GitHub-Mark-64px.png">
         </a>
         <p id="copyright">Copyright © 2022 TFSM00 </p>
-
     </div>
 
     <script src="code.js">
     </script>
-</body>
+  </body>
 </html>

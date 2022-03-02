@@ -12,92 +12,65 @@ html {
     font-size: 30px;
 }
 
-.calculator-body {
+.calculator{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: auto;
-    height: 650px;
+    height: 550px;
     width: 450px;
     background-color: aliceblue;
 }
 
-.output {
+.calculator-screen {
     display: flex;
-    justify-content: space-between;
+    flex: 1;
+    justify-content: center;
     flex-direction: column;
+    text-indent: -3em;
     text-align: right;
-    height: 100px;
-    width: 400px;
     padding: 20px;
+    width: 400px;
     background-clip: content-box;
     background-color: aquamarine;
 }
 
-#eq {
+.calculator-keys {
     display: flex;
-    height: 40px;
-    width: 380px;
-    justify-content: end;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: gray;
-}
-
-#input {
-    display: flex;
-    height: 40px;
-    width: 380px;
-    justify-content: end;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: lightgreen;
-
-}
-
-.buttons {
-    display: flex;
+    flex:8;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 400px;
-    height: 500px;
     padding: 20px;
+    margin:auto;
+    gap: 20px;
     background-clip: content-box;
     background-color: lightcoral;
+}
+
+.r1 button, .r2 button, .r3 button, .r4 button {
+    width: 60px;
+    height: 60px;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    height: 110px;
-    width: auto;
-    padding: 10px;
+    gap: 20px;
 }
 
-.row.c5 {
-    padding-bottom: 20px;
+.r5 button {
+    width: 300px;
+    height: 60px;
 }
 
-.button {
-    text-align: center;
-    border-radius: 5px;
-    width: 80px;
-    height: 70px;
-    padding: 0px;
-    font-size: 20px;
-}
-
-.button.clear,
-.button.delete {
-    width: 170px;
-    height: 70px;
-}
-
+/* .keys {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    
+} */
 
 .footer {
     display: flex;
